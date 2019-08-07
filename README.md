@@ -66,3 +66,5 @@ $user_data = $wechat ->  get_user_info($access_token, $openid);
 
 微信网页授权官方规范
 [https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421140842)
+
+如果你看到，给予你的帮助，麻烦给个赞
