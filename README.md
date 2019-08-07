@@ -2,6 +2,10 @@
 
 在接入该功能之前，需要注册微信公账号服务号，然后进行认证，获取appid,app_secret及设置redirect_uri（授权之后跳转地址）
 
+> **如何设置redirect_uri**
+> 微信公众号首页 =》 接口权限 =》 网页授权 =》 网页授权获取用户基本信息
+> 你也可以进入[网页授权](https://mp.weixin.qq.com/cgi-bin/settingpage?t=setting/function&action=function&token=1916547199&lang=zh_CN)登陆微信公众号
+
 #### 获取 code
 
 创建index.php
