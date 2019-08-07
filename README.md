@@ -29,7 +29,7 @@ $token_data = $wechat -> get_access_token($code);
 这将会返回一个数组
 
 |   参数       | 	描述  |
-| ------------- |:-------------:|
+| :------------- |:-------------|
 | access_token |	网页授权接口调用凭证,注意：此access_token与基础支持的access_token不同|
 |  expires_in	 |access_token接口调用凭证超时时间，单位（秒）|
 | refresh_token|	用户刷新access_token|
@@ -49,7 +49,7 @@ $user_data = $wechat ->  get_user_info($access_token, $openid);
 
 
 |参数 |	描述|
-| ------------- |:-------------:|
+| :------------- |:-------------|
 |openid	| 用户的唯一标识|
 |nickname|	用户昵称|
 |sex |	用户的性别，值为1时是男性，值为2时是女性，值为0时是未知|
