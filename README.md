@@ -22,9 +22,7 @@ $url = $wechat -> get_authorize_url($state);
 需要创建一个授权之后跳转地址页面，这里我命名为response.php
 
 ```php
-//参数初始化
 $code = isset($code) ? $code : "0";
-
 $wechat = new Wechat();
 $token_data = $wechat -> get_access_token($code);
 
@@ -42,6 +40,7 @@ $token_data = $wechat -> get_access_token($code);
 
 #### 获取用户信息
 ```php
+$code = isset($code) ? $code : "0";
 $wechat = new Wechat();
 $user_data = $wechat ->  get_user_info($code);
 
