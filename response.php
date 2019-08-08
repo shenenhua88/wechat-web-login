@@ -7,13 +7,9 @@ $code = isset($code) ? $code : "0";
 
 //echo($code);
 
+//获取用户信息
 $wechat = new Wechat();
-$token_data = $wechat -> get_access_token($code);
-//var_dump($token_data);
-$access_token = $token_data["access_token"];
-$openid = $token_data["openid"];
-
-$user_data = $wechat ->  get_user_info($access_token, $openid);
+$user_data = $wechat ->  get_user_info($code);
 
 echo "openid:".$user_data["openid"];
 echo ("<br>");
