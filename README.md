@@ -24,7 +24,6 @@ $url = $wechat -> get_authorize_url($state);
 ```php
 //参数初始化
 $code = isset($code) ? $code : "0";
-//echo($code);
 
 $wechat = new Wechat();
 $token_data = $wechat -> get_access_token($code);
@@ -43,10 +42,8 @@ $token_data = $wechat -> get_access_token($code);
 
 #### 获取用户信息
 ```php
-$access_token = $token_data["access_token"];
-$openid = $token_data["openid"];
-
-$user_data = $wechat ->  get_user_info($access_token, $openid);
+$wechat = new Wechat();
+$user_data = $wechat ->  get_user_info($code);
 
 ```
 返回结果
